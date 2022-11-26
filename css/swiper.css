@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-} */
-
 .bdy{
   height: 100vh;
   display: flex;
@@ -50,9 +43,12 @@
   border-radius: 20px;
   height: 400px;
   margin: 20px 0;
-  /* -webkit-box-shadow: 17px 13px 34px -4px rgba(255,255,255,1);
-    -moz-box-shadow: 17px 13px 34px -4px rgba(255,255,255,1);
-    box-shadow: 17px 13px 34px -4px rgba(255,255,255,1); */
+  transition: 0.5s;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 
 .card1{
