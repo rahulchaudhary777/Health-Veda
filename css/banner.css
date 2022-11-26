@@ -1,0 +1,147 @@
+.banner{
+    padding: 40px;
+    height: 700px;
+    background-image: url("../assets/web-intro.jpg");
+    background-size: 100% 700px;
+    display: flex;
+    position: relative;
+}
+
+.banner .bannerText{
+    width: 40%;
+    color: rgba(0, 0, 0, 0.797);
+    position: relative;
+    top: 22%;
+    line-height: 45px;
+}
+
+.banner .bannerText h1{
+    font-family: 'Merriweather', serif;
+}
+
+.banner .bannerText p{
+    font-family: 'Kalam', cursive;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.456);
+    margin-bottom: 5%;
+}
+
+.banner .bannerText button{
+    font-family: 'Roboto Slab', serif;
+    padding: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.banner .bannerText button:hover{
+    transform: translateY(-7%);
+}
+
+.popup{
+    border-color: #fff;
+    box-shadow: 3px 3px 5px gray;
+    width: 25%;
+    height: 70%;
+    font-family: 'Roboto Slab', serif;
+    padding: 15px 35px;
+    border-radius: 10px;
+    position: absolute;
+    right: 17%;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    transform: translate(50%, 50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.6s;
+}
+
+.open-popup{
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    bottom: -190px;
+    right: 70px;
+}
+
+.popup h2{
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.popup input, #message{
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+    height: 40px;
+    width: 95%;
+    font-size: 17px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.popup .appointmentBtn{
+    width: 40%; 
+    padding: 5px 0;
+    font-size: 20px;
+    font-family: 'Kalam', cursive;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.popup .appointmentBtn:hover{
+    transform: translateY(-5%);
+}
+
+.thanks{
+    background-color: #fff;
+    box-shadow: 5px 5px 8px gray;
+    width: 25%;
+    font-family: 'Roboto Slab', serif;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    right: 20%;
+    /* top: 40%; */
+    visibility: hidden;
+}
+
+.thanks-visible{
+    visibility:visible;
+}
+
+.thanks h2{
+    position: absolute;
+    right: 8%;
+    top: 10px;
+    font-family: 'Kaushan Script', cursive;
+    color: rgba(227, 72, 72, 0.877);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.thanks img{
+    margin-top: 10%;
+    width: 75px;
+    height: 75px;
+    margin-left: 40%;
+    
+}
+
+.thanks h1{
+    font-family: 'Kaushan Script', cursive;
+    color:#2d2d47 ;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.thanks p{
+    background-color: rgba(185, 230, 248, 0.796);
+    text-align: center;
+    border-radius: 5px;
+    padding: 7px 0;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 7%;
+}

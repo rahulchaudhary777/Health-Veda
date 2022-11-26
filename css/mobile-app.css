@@ -1,0 +1,43 @@
+.mobile-app{
+    background-color: #debace;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+
+  .mobile-app .mobile-div{
+    width: 40%;
+  }
+
+  .mobile-app .mobile-div img{
+    margin-left: -50px;
+    
+  }
+
+  .mobile-app .app-content{
+    width: 40%;
+    margin: 5% 0 5px 0;
+    padding-right: 30px;
+    margin-top: 0;
+  }
+
+  .mobile-app .app-content h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .mobile-app .app-content p{
+    font-family: "Roboto Slab";
+    color: #474e68bc;
+    font-size: 17px;
+    line-height: 1.7rem;
+  }
+
+  .mobile-app .app-content .btn{
+    width: 35%;
+    font-size: 20px;
+    margin-top: 3%;
+    margin-right: 3%;
+    height: 20%;
+  }

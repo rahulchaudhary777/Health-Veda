@@ -1,0 +1,87 @@
+#footer-section{
+    background-image: linear-gradient(to left, #28313b, #485461);
+    color: white;
+    padding: 30px 30px 10px 30px;
+  }
+  .footer{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer h2{
+    font-family: 'Kalam', cursive;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  .footer table td{
+    padding-right: 60px;
+    font-family: 'Kalam', cursive;
+    font-size: 20px;
+  }
+
+  .footer i{
+    margin: 20px 25px 30px 0;
+    cursor: pointer;
+  }
+
+  .footer .right-side{
+    margin-top: 3%;
+  }
+
+  .footer .right-side h3{
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .footer .right-side .text{
+    height: 45px;
+    width: 60%;
+    padding: 0 15px;
+    border: 2px solid rgba(255, 255, 255, 0.199);
+    outline: none;
+    background-color: #28313b;
+    color: white;
+    margin-right: -5px;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+  }
+
+  .footer .right-side button{
+    height: 45px;
+    border: 2px solid rgba(255, 255, 255, 0.199);
+    outline: none;
+    background-color: #28313b;
+    color: white;
+    padding: 0 20px;
+  }
+
+  .footer .right-side .checkbox{
+    width: 18px;
+    height: 18px;
+    accent-color: #28313b;
+    margin-right: 8px;
+  }
+  .footer .right-side span{
+    font-family: 'Kalam', cursive;
+    width: 50px;
+  }
+
+  .footer .right-side .submitPara{
+    visibility: hidden;
+    margin-top: -30px;
+    
+  }
+  .footer .right-side .submitPara span{
+    color: rgb(40, 198, 40);
+    margin-left: -52%;
+    font-size: 40px;
+    
+  }
+
+  #footer-section p{
+    margin-left: 35%;
+    font-size: 18px;
+    font-family: 'Kalam', cursive;
+  }

@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/accordion.css">
+    <link rel="stylesheet" href="./css/mobile-app.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <!-- <link rel="stylesheet" href="./css/swiper-bundle.min.css"> -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/be6b871522.js" crossorigin="anonymous"></script>
+    <title>HealthVeda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Kalam&family=Merriweather:ital,wght@1,900&family=Roboto+Slab&display=swap"
+      rel="stylesheet">
+        <!--bootsrap-->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!--font awesome kit-->
+         <script src="https://kit.fontawesome.com/72f87109fe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="callContainer">
+        <div class="logo">
+            <img src="./assets/image/logo.png" alt="logo">
+            <h1>HEALTHVEDA</h1>
+        </div>
+        <div class="timing">
+            <div class="call-icon"><i class="fa-solid fa-phone fa-2x"></i></div>
+            <div class="call">
+                <h5>Call us Today!</h5>
+                <p>800-555-2368</p>
+            </div>
+
+            <div class="clock-icon"><i class="fa-solid fa-clock fa-2x"></i></div>
+            <div class="openingHour">
+                <h5>opening hours</h5>
+           
+                <p>MON-FRI: 8:00-17:00</p>
+            </div>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="menu">
+            <a href="#Home" active>Home</a>
+            <a href="#section3">Features</a>
+            <a href="#carousel-section">Department</a>
+            <a href="#swiper-text">Doctors</a>
+            <a href="#swiper-text1">Hospitals</a>
+            <a href="#footer-section">Contact</a>
+            
+        </div>
+
+        <input type="text" placeholder="Search...">
+    </div>
+    <div class="banner">
+        <div class="bannerText">
+        <h1>YOUR MOST TRUSTED HEALTH PARTNER FOR LIFE.</h1>
+        <P>We offer world class facilities and free consulting from best doctors, and put your health on top priority.</P>
+        <button onclick="openPopup()" type="button" class="btn btn-dark">APPOINTMENT</button>
+        <button type="button" class="btn btn-outline-dark">Learn More</button>
+        </div>
+
+        <div class="popup">
+            <h2>Book an Appointment</h2>
+            <form autocomplete="off" id="form">
+                Name <span style="color:red">*</span><br>
+                <input id="nameBox" type="text" name="name" placeholder="Enter your name" required class="input"><br>
+        
+                Mobile Number <span style="color:red">*</span><br>
+                <input  id="telBox"type="tel" name="mobile" placeholder="Enter your number"  class="input" required><br>
+        
+                Your Query <br>
+                <textarea name="query" 
+                name="message"
+                id="message" cols="30" rows="10" placeholder="Enter Your Query(optional)"
+                    style="height:100px;"></textarea>
+        
+                <button id="sumbit-button" type="submit" class="btn btn-secondary appointmentBtn" onclick="thanksVisible()">Submit</button>
+                <button type="button" class="btn btn-secondary appointmentBtn" onclick="closePopup()">Close</button>
+            </form>
+        </div>
+
+        <div class="thanks">
+            <h2 onclick="hide()">X</h2>
+            <img src="./assets/image/tick.png" alt="tick">
+            <h1>Thank You!</h1>
+            <p id="thanksPara"></p>
+        </div>
+    </div>
+
+    <div class="intro">
+        <h1>About HealthVeda Hospitals</h1>
+        <video autoplay muted>
+            <source src="./assets/intro.mp4" type="video/mp4">
+            
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <section  id="section3">
+      <h1 class="Section3-heading">Features</h1>
+
+    <div class="section-main">
+        <div class="sec1">
+        <div class="facility-card mb-4" style="max-width: 450px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img class="sec-3img"src="./assets/image/doctor.png" alt="doctor.image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Top Level Doctors</h5>
+                  <p class="card-text">Porta semper lacus at cursus primis ultrice in ligula risus an auctor tempus feugiat dolor.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="facility-card mb-4" style="max-width: 450px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img class="sec-3img" src="./assets/image/microscope.png" alt="">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Modern Equipment</h5>
+                  <p class="card-text">Porta semper lacus at cursus primis ultrice in ligula risus an auctor tempus feugiat dolor.</p>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sec1">
+          <div class="facility-card mb-4" style="max-width: 450px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img  class="sec-3img" src="./assets/image/medical-record.png" alt="">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Qualified Facilities</h5>
+                  <p class="card-text"> Porta semper lacus at cursus primis ultrice in ligula risus an auctor tempus feugiat dolor.</p>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="facility-card mb-4" style="max-width: 450px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+               <img  class="sec-3img" src="./assets/image/hospital-bed.png" alt="">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Medical Counseling</h5>
+                  <p class="card-text"> Porta semper lacus at cursus primis ultrice in ligula risus an auctor tempus feugiat dolor.</p>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="sec1">
+          <div class="facility-card mb-4" style="max-width: 450px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img  class="sec-3img" src="./assets/image/medical-report.png" alt="">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Professional Services</h5>
+                  <p class="card-text">Porta semper lacus at cursus primis ultrice in ligula risus an auctor tempus feugiat dolor.</p>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="facility-card mb-4" style="max-width: 450px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img  class="sec-3img" src="./assets/image/ambulance.png" alt="">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Emergency Help</h5>
+                  <p class="card-text">Porta semper lacus at cursus primis ultrice in ligula risus an auctor tempus feugiat dolor an enim nullam.</p>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </section>
+        <section id="Section5">
+            <div class="sec5" >
+                <div class="sec5Text">
+                <h1>Solutions to Complex Medical Problems</h1>
+                <p>An enim nullam tempor sapien gravida donec enim ipsum blandit lorem porta justo integer in odio velna vitae auctor integer congue magna at pretium purus pretium ligula rutrum itae laoreet augue posuere and curae integer congue leo metus mollis primis</p>
+                <p>An enim nullam tempor sapien gravida donec enim ipsum blandit lorem porta justo integer in odio velna vitae auctor
+                  integer congue magna at pretium purus pretium ligula rutrum itae laoreet augue posuere and curae integer congue leo
+                  metus mollis primis</p>
+              </div>
+                <div class="sec5Img">
+                  <div class="img5Div">
+<img class="sec5-img"src="./assets/image/pexels-mart-production-7088526.jpg" alt=""><br>
+<img class="sec5-img2" src="./assets/image/pexels-zakir-rushanly-11661531.jpg" alt="">
+                  </div>
+                  <div>
+<img class="sec5-img1" src="./assets/image/pexels-pavel-danilyuk-5996762.jpg" alt="">
+
+</div>
+                </div>
+
+            </div>
+
+        </section>
+
+ 
+
+        <section id="section4">
+            <div class="sec-4">
+            <div class="sec4Img">
+<img class="sec4-img"src="./assets/image/o-DOCTOR-facebook.jpg" alt="">
+            </div>
+            <div class="sec4Text">
+                 <p class="qua">QUALIFIED DOCTORS</p>
+                 <h1 class="Text">
+                    Group of Certified and Experienced Doctors
+                 </h1>
+                 <p class="Text" >
+                    Maecenas gravida porttitor nuncquis vehicula magna luctus tempor. 
+                    Quisque vel laoreet turpis urna augue viverra a augue eget dictum tempor diam pulvinar massa purus nulla
+                 </p>
+                 <p class="Text" >
+                    Nemo ipsam egestas volute turpis dolores ut aliquam quaerat sodales sapien undo pretium purus feugiat dolor impedit
+                 </p>
+                 <p class="Text" >
+                    Nemo ipsam egestas volute turpis dolores ut aliquam quaerat sodales sapien undo pretium purus feugiat dolor impedit magna purus pretium gravida donec ligula massa in faucibus
+                 </p>
+
+            </div>
+        </div>
+      </section>
+
+      <section id="carousel-section">
+        <h1 class="header">Departments</h1>
+        <div class="carousel-link">
+          <button class="carosel-button1" onclick=" slideShow (0)">Pediatrics</button>
+          <button class="carosel-button1" onclick="   slideShow (2)">Hematology</button>
+          <button class="carosel-button1" onclick=" slideShow (1)">MRI</button>
+          <button class="carosel-button1"onclick=" slideShow (3)">X-RAY</button>
+        </div>
+      
+        <div class="carousel-div">
+          <div class="carousel1">
+            <div class="carousel-image">
+              <img  class="carousel-img"src="./assets/image/th.jpg" alt="">
+            </div>
+        
+              <h3 class="carousel-contenth">Pediatrics</h3>
+              <p class="carousel-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+              book.</p>
+            
+          </div>
+
+          <div class="carousel1">
+            <div class="carousel-image">
+              <img class="carousel-img" src="./assets/image/th (1).jpg" alt="">
+            </div>
+           
+              <h3 class="carousel-contenth">Dermetologist</h3>
+              <p class="carousel-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                specimen
+                book.</p>
+            
+           
+          </div>
+
+          <div class="carousel1">
+            <div class="carousel-image">
+              <img class="carousel-img" src="./assets/image/th (2).jpg" alt="">
+            </div>
+           
+              <h3 class="carousel-contenth">Surgen</h3>
+              <p class="carousel-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                specimen
+                book.</p>
+             
+            
+          </div>
+          <div class="carousel1">
+            <div class="carousel-image">
+              <img  class="carousel-img" src="./assets/image/x-ray" style="width: 500px;height: 250px;" alt="">
+            </div>
+           
+              <h3 class="carousel-contenth" >X-RAY Diagonist</h3>
+              <p class="carousel-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                specimen
+                book.</p>
+            
+           
+          </div>
+        </div>
+      </section>
+
+      <div id="swiper-text">
+        <h1>Top Doctors</h1>
+      </div>
+      <div class="bdy">
+        <section class="swiper-section">
+        
+          <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+        
+              <div class="swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/image/doc1.jpg" alt="">
+                  </div>
+        
+                  <div class="media-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+        
+                  <div class="name-profession">
+                    <span class="name">Mukesh Kumar</span>
+                    <span class="profession">Dentist</span>
+                  </div>
+        
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+        
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                    <button class="hireMe">Consult</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/image/doc2.jpg" alt="">
+                  </div>
+        
+                  <div class="media-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+        
+                  <div class="name-profession">
+                    <span class="name">Ramesh chauhan</span>
+                    <span class="profession">Surgen</span>
+                  </div>
+        
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+        
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                    <button class="hireMe">Consult</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/image/doc3.jpg" alt="">
+                  </div>
+        
+                  <div class="media-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+        
+                  <div class="name-profession">
+                    <span class="name">Rashi Shukla</span>
+                    <span class="profession">Paediatricians</span>
+                  </div>
+        
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+        
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                    <button class="hireMe">Consult</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/image/doc4.jpg" alt="">
+                  </div>
+        
+                  <div class="media-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+        
+                  <div class="name-profession">
+                    <span class="name">Suresh pratap Singh</span>
+                    <span class="profession">Dermetologist</span>
+                  </div>
+        
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+        
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                    <button class="hireMe">Consult</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/image/doc5.jpg" alt="">
+                  </div>
+        
+                  <div class="media-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+        
+                  <div class="name-profession">
+                    <span class="name">Ambika Sharma</span>
+                    <span class="profession">Nephrologist</span>
+                  </div>
+        
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+        
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                    <button class="hireMe">Consult</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/image/doc6.jpg" alt="">
+                  </div>
+        
+                  <div class="media-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+        
+                  <div class="name-profession">
+                    <span class="name">Rohit Sexena</span>
+                    <span class="profession">Physician</span>
+                  </div>
+        
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+        
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                    <button class="hireMe">Consult</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </section>
+      </div>
+
+      <!-- Hospitals -->
+      <div id="swiper-text1" style="background:white;">
+        <h1 style="color: black;">Our Hospitals</h1>
+      </div>
+      <div class="bdy" style="background-color: white;">
+        <section class="swiper-section">
+      
+          <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+      
+              <div class="swiper-slide card card1 card1">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/image/hospital.jpg" alt="">
+                  </div>
+      
+                  <div class="media-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+      
+                  <div class="name-profession">
+                    <span class="name">Medanta Hospital</span>
+                  </div>
+      
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+      
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                    <button class="hireMe">Consult</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card card1">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/image/hospital.jpg" alt="">
+                  </div>
+      
+                  <div class="media-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+      
+                  <div class="name-profession">
+                    <span class="name">Apollo Hospital</span>
+                    
+                  </div>
+      
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+      
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                    <button class="hireMe">Consult</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card card1">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/image/hospital.jpg" alt="">
+                  </div>
+      
+                  <div class="media-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+      
+                  <div class="name-profession">
+                    <span class="name">GangaRam Hospital</span>
+                  </div>
+      
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+      
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                    <button class="hireMe">Consult</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card card1">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/image/hospital.jpg" alt="">
+                  </div>
+      
+                  <div class="media-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+      
+                  <div class="name-profession">
+                    <span class="name">Lifeline Lifecare</span>
+                  </div>
+      
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+      
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                    <button class="hireMe">Consult</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card card1">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/image/hospital.jpg" alt="">
+                  </div>
+      
+                  <div class="media-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+      
+                  <div class="name-profession">
+                    <span class="name">MediMax Lifecare</span>
+                  </div>
+      
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+      
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                    <button class="hireMe">Consult</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card card1">
+                <div class="card-content">
+                  <div class="image">
+                    <img src="./assets/image/hospital.jpg" alt="">
+                  </div>
+      
+                  <div class="media-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+      
+                  <div class="name-profession">
+                    <span class="name">Nayati Hospital</span>
+                  </div>
+      
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+      
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                    <button class="hireMe">Consult</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </section>
+      </div>
+
+
+      <section class="accordion-section">
+        <div class="accordion-div">
+        <div class="accordion">
+          <h1>FAQ</h1>
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              What is Lorem Ipsum?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                dummy text ever since the 1500s.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Why do we use it?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+                layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Where does it come from?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
+                from 45 BC, making it over 2000 years old.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Where can I get some?
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
+                by injected humour, or randomised words which don't look even slightly believable.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header">
+              Lorem Ipsum
+            </div>
+            <div class="accordion-item-body">
+              <div class="accordion-item-body-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus viverra risus, eu volutpat mi iaculis non.
+                Nullam id tortor ullamcorper, volutpat ante vel, dignissim sapien. Vestibulum at accumsan ex, eu commodo felis.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <section class="mobile-app">
+        <div class="mobile-div">
+          <img src="./assets/image/app-image.png" alt="appImage">
+        </div>
+        <div class="app-content">
+          <h1>Mobile App for Appointments & Diagnostics booking.</h1>
+          <p>We're currently taking appointment requests from our mobile app and mobile website only. Download the mobile app to
+            consult with the top medical specialists!</p>
+        
+          <button type="button" class="btn btn-secondary"><i class="fa-brands fa-google-play"></i> Google Play</button>
+          <button type="button" class="btn btn-outline-secondary"><i class="fa-brands fa-apple"></i></i> App Store</button>
+        </div>
+      </section>
+
+      <section id="footer-section">
+        <div class="footer">
+        <div class="left-side">
+          <h2>HealthVeda</h2>
+          <table>
+            <tr>
+              <td>Consumer Care</td>
+              <td>Our Team</td>
+            </tr>
+            <tr>
+              <td>Home</td>
+              <td>Take A Appointment</td>
+            </tr>
+            <tr>
+              <td>Reviews</td>
+              <td>Testimonials</td>
+            </tr>
+            <tr>
+              <td>Hospitals</td>
+              <td>Services</td>
+            </tr>
+          </table>
+          <i class="fa-brands fa-2x fa-facebook"></i>
+          <i class="fa-brands fa-2x fa-instagram"></i>
+          <i class="fa-brands fa-2x fa-twitter"></i>
+          <i class="fa-brands fa-2x fa-pinterest"></i>
+          <i class="fa-brands fa-2x fa-youtube"></i>
+        </div>
+
+        <div class="right-side">
+          <h3>Get the best advice from best Doctors</h3>
+          <input class="text" type="tel" placeholder="Your mobile number here">
+          <button onclick="footerSubmit()">Subscribe</button><br>
+          <input class="checkbox" type="checkbox" name="check" id="checkbox"><span class="checkboxPara">By checking the box, you are agree that you are agree about the all terms & conditions.</span>
+          <p class="submitPara"><span>✔ </span>Thanks! Ayu Health Team will get in touch soon.;</p>
+        </div>
+        </div>
+        <p>&copy; HealthVeda. All Right Reserved.</p>
+      </section>
+      <script type="module" src="./js/firebaseConfig.js"></script>
+      <script type="module" src="./js/firebase.js"></script>
+      
+    <script src="./js/popup.js"></script>
+    <script src="./js/footerSubmit.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/scrollToTop.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    
+
+</body>
+</html>
